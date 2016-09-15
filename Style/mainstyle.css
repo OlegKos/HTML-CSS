@@ -1,0 +1,703 @@
+/*reset*/
+* { 	 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	background-image: url('../Image/Background.png');
+}
+
+
+/*styles*/
+
+/* ------------------------------------------------- Base style --------------------------------------------------*/
+#main{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	box-shadow: 0px 0px 10px 3px #bebebe;
+	-webkit-box-shadow: 0px 0px 10px 3px #bebebe;
+	-moz-box-shadow: 0px 0px 10px 3px #bebebe;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+@font-face{
+	font-family: "BebasNeue";
+	src: url(../Fonts/BebasNeueRegular.ttf);
+}
+@font-face{
+	font-family: "GillSans";
+	src: url(../Fonts/Gillsansmt.ttf);
+}
+@media only screen and (max-width: 800px) {    
+    #menu-BG .menu{display: none;}	
+    #podkladka{height: 95px;}
+    #quote > div{padding-top: 0px;}    
+}
+
+@media only screen and (min-width: 500px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+}
+@media only screen and (min-width: 800px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%}
+}
+
+
+
+/*--------------------------------------------------------------------------------------------- Header -----------------------------------------------------------------------------------------*/
+#header{	
+	padding: 15px;
+	width: 100%;
+	background-color: #ebebeb;	
+	z-index: 3;
+
+}
+
+
+
+
+/*-------------------------------------------------- Hidden menu -----------------------------------------------*/
+#hidden-menu-icon{
+	display: none;
+	position: fixed;
+	
+	z-index: 5;
+	padding: 15px 20px 15px 20px;	
+	top: 8px;
+}
+#hidden-menu-icon a{
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 20px;
+	color: #000000;
+}
+
+#hidden-menu{	
+	position: fixed;
+	padding: 20px;
+	width: 320px;
+	height: 100%;
+	background-color: #ffffff;
+	z-index: 10;
+	left: -330px;
+	-webkit-transition: -webkit-transform 1s; /* Safari */
+    transition: transform 1s;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.45);
+}
+#close-hidden-menu{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 800;
+	position: relative;
+	left: 260px;
+	top:-65px;
+	color: #000000;
+}
+
+#hidden-menu h1{
+  display: initial;
+  font-size: 39px;
+  font-family: "BebasNeue";
+  font-weight: 100;
+  color: rgb(54, 54, 54);
+  line-height: 1.2;
+  text-align: left;
+  text-shadow: 0px 1px 2px rgba(137, 137, 137, 0.75);
+}
+#hidden-menu h5{	
+  display: initial;
+  font-size: 16px;
+  font-family: "GillSans";
+  font-weight: 100;  
+  color: rgb(172, 172, 172);
+  line-height: 1.2;
+}
+#hidden-menu .menu{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+    padding-left: 30px;
+    margin-top: 20px;    
+    color: #363636;
+    font-weight: 400;
+    font-size: 18px;
+}
+#hidden-menu .menu li {
+	padding: 10px;
+}
+
+
+/*----------------------------------------------------- Logo ------------------------------------------------------*/
+.logo{
+	display: block;
+	margin: auto;
+	width: 170px;
+}
+.logo div{
+	display: inline-block;
+}
+
+.circle-1{
+	
+	width: 10px;
+	height: 10px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color: #242424;
+	box-shadow: 0px 0px 2px 0px #8c8c8c;
+	-webkit-box-shadow: 0px 0px 2px 0px #8c8c8c;
+	-moz-box-shadow: 0px 0px 2px 0px #8c8c8c;
+	position: relative;
+	top:-9px;
+}
+.circle-2{
+	width: 18px;
+	height: 18px;
+	margin: 0px 3px 0px 2px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background-color: #242424;
+	box-shadow: 0px 0px 2px 0px #8c8c8c;
+	-webkit-box-shadow: 0px 0px 2px 0px #8c8c8c;
+	-moz-box-shadow: 0px 0px 2px 0px #8c8c8c;
+	position: relative;
+	top:-5px;
+}
+.circle-3{
+	width: 28px;
+	height: 28px;	
+	border-radius: 14px;
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	background-color: #59d9dd;
+	position: relative;
+	box-shadow: 0px 0px 2px 1px #c1c6c7;
+	-webkit-box-shadow: 0px 0px 2px 1px #c1c6c7;
+	-moz-box-shadow: 0px 0px 2px 1px #c1c6c7;
+}
+.circle-4-in-cir3{
+	width: 24px;
+	height: 24px;
+	border: 1px solid #43adb2;			
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	position: absolute;
+	top:2px;
+	right: 2px;
+}
+#header h1{
+  display: initial;
+  font-size: 39px;
+  font-family: "BebasNeue";
+  font-weight: 100;
+  color: rgb(54, 54, 54);
+  line-height: 1.2;
+  text-align: left;
+  text-shadow: 0px 1px 2px rgba(137, 137, 137, 0.75);
+}
+#header h5{	
+  display: initial;
+  font-size: 16px;
+  font-family: "GillSans";
+  font-weight: 100;  
+  color: rgb(172, 172, 172);
+  line-height: 1.2;
+}
+
+
+
+/*----------------------------------------------------- Menu -----------------------------------------------------*/
+#menu-BG{
+	position: relative;
+	width: 100%;	
+	background-color: #ebebeb;
+}
+#menu-BG .menu{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 505px;
+    color: #898989;
+
+}
+#menu-BG .menu li {
+    float: left;   
+    margin-right: 12px;
+    margin-left: 8px;    
+}
+#menu-BG .menu li a{
+	display: block;
+	font-weight: 100;
+	font-size: 15px;
+}
+
+.menu li a{	
+	font-family: "GillSans";   
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 12px 0px 12px 0px;
+	-moz-border-radius: 12px 0px 12px 0px;
+	-webkit-border-radius: 12px 0px 12px 0px;
+
+}
+.menu li a:hover{
+	background-color: #71e3e7;
+	color:#363636;	
+}
+.menu li a:active{
+    background-color: #494949;
+	color:#56e3e8;	
+}
+.selected{
+	 background-color: #494949;
+	color:#56e3e8;	
+}
+.hoverr{
+	background-color: #71e3e7;
+	color:#363636;
+}
+
+
+
+/*------------------------------------------------------------------------- Content -----------------------------------------------------------------------------------------*/
+#content{
+	padding: 20px;
+	width: 100%;
+	background-color: #ebebeb;
+}
+
+
+/*---------------------------------------------- Image menu ---------------------------------------------------*/
+#image-menu{
+	padding-bottom: 20px;
+}
+.image-menu-container > img{
+	width: 100%;
+	height: auto;
+	
+}
+.image-menu-container:hover .image-title{
+	-moz-transform: translate(0px,-85px);
+	-webkit-transform: translate(0px,-85px); /* Safari */
+    transform: translate(0px,-85px);
+}
+#image-menu > div{
+	overflow: hidden;
+}
+.image-menu-container{
+	overflow: hidden;
+}
+
+#image-menu img:hover{
+	box-shadow: none;
+}
+.image-title-container{
+	height: 0px;
+	
+}
+.image-title{
+	box-shadow: 0px 1px 3px 0px rgba(125, 125, 125, 0.75);
+	position: relative;
+	left: 25px;
+	top:5px;
+	width: 175px;
+	height: 50px;
+	background-color: #ffffff;
+	-moz-transition:  transform 1s;
+	-webkit-transition:  -webkit-transform 1s; /* Safari */
+    transition:  transform 1s;
+}
+.image-title a{
+    font-size: 15px;
+    font-family: "GillSans";
+    color: rgb(37, 37, 37);
+    line-height: 1.2;
+    text-align: left;
+    text-decoration: none;
+    position: relative;
+    top:15px;
+    left: 15px;  
+}
+.image-title-arrow{
+	height: 30px;
+	width: 30px;
+	padding:8px;
+	background-color: #5bd9de;
+	border-radius: 15px;
+	position: relative;
+	top:-23px;
+	left:145px;
+}
+
+
+
+/*----------------------------------------------- Quote -------------------------------------------------------*/	
+#quote{
+	width: 100%;	
+	background-color: #ffffff;
+	border-radius: 10px 0px;
+	-webkit-border-radius: 10px 0px 10px 0px;
+	-moz-border-radius: 10px 0px 10px 0px;	
+	box-shadow: 0px 1px 3px 0px rgba(137, 137, 137, 0.75);
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(137, 137, 137, 0.75);
+	-moz-box-shadow: 0px 1px 3px 0px rgba(137, 137, 137, 0.75);
+	margin-bottom: 50px;
+}
+#quote p{
+  font-size: 15px;
+  font-family: "GillSans";
+  color: rgb(54, 54, 54);
+  line-height: 1.2;
+  text-align: left;
+}
+
+#quote button{
+	
+	float: right;
+ 	height: 51px;	
+	border: none;
+	background-color: #65d8dc;
+	border-radius: 8px 0px 10px 0px;
+	box-shadow: 0px 1px 2px 0px rgba(137, 137, 137, 0.75),inset 0px 1px 0px 0px rgba(114, 229, 233, 0.75);
+	overflow: hidden;
+	
+}
+#quote button h4{
+	font-size: 24px;
+    font-family: "BebasNeue";
+    color: rgb(54, 54, 54);
+    line-height: 2.2;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(180, 245, 247, 0.75);
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+
+}
+
+
+
+/*-------------------------------------------- Main content ------------------------------------------------------*/
+#blok-1{	
+	padding-left: 0px;
+	padding-right: 10px;
+	background-color: #ebebeb;
+}
+#blok-2{
+	
+	padding-left: 10px;
+	padding-right: 0px;
+	background-color: #ebebeb;
+}
+#blok-3{
+	
+	padding-left: 10px;
+	padding-right: 0px;
+	background-color: #ebebeb;
+}
+#blok-1 > div{
+	margin-bottom: 25px;
+}
+#blok-2 .blok-header{
+	margin-bottom: 25px;
+}
+#blok-3 .blok-header{
+	margin-bottom: 25px;
+}
+.blok-header{
+	position: relative;
+	margin: auto;	
+	background-color: #ebebeb;	
+	z-index: 2;
+	overflow: hidden;
+}
+#blok-1-header{
+	width: 238px;
+}
+#blok-2-header{
+	width: 232px;
+}
+#blok-3-header{
+	width: 256px;
+}
+#content hr{
+	height: 1px;
+	width: 100%;
+	top:14px;
+	position: relative;
+	z-index: 1;
+}
+.blok-header h2{
+	display: inline-block;
+    font-size: 24px;
+    font-family: "BebasNeue";    
+    line-height: 1.2;
+    text-align: left;  
+    color: #56e3e8;  
+   
+}
+.blok-header h2:first-of-type{
+	color: #363636; 
+}
+.blok-header-circle{
+	height: 8px;
+	width: 8px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background-color: #363636;
+	display: inline-block;
+	position: relative;
+	top:-5px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.blok-header + p{
+	margin-bottom: 25px;
+}
+.mycol{
+	padding:30px 10px 30px 20px;
+	background-color: #ffffff;
+	float: right;
+	width: 47%;
+	box-shadow: 0px 1px 3px 0px rgba(137, 137, 137, 0.75);
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(137, 137, 137, 0.75);
+	-moz-box-shadow: 0px 1px 3px 0px rgba(137, 137, 137, 0.75);
+
+}
+.mycol:first-child{
+	float: left;
+
+}
+.mycol img{
+	margin-right: 20px;
+	width: auto;
+	height: 36px;
+}
+.mycol h3{	
+  font-size: 20px;
+  font-family: "BebasNeue";
+  color: #56e3e8;
+  line-height: 1.2;
+  text-align: left;
+  display: inline-block;
+}
+.mycol h3:first-of-type{
+	color: #363636;
+}
+.mycol p{
+	font-size: 15px;   
+    color: #b0b0b0;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: left
+}
+.icon-background{
+	padding: 10px 15px 10px 15px;
+	border-radius: 10px 0px 10px 0px;	
+   background-color: rgb(204, 204, 204);
+   display: inline-block;
+}
+.icon-background img{
+	width: 22px;
+	height: 22px;
+}
+#blok-2-iconbar > div{
+	padding: 0px ;
+}
+#blok-2-iconbar{
+	overflow: hidden;
+}
+#blok-2-iconbar h4{
+	display: inline-block;	
+    font-size: 18px;
+    font-family: "BebasNeue";
+    color: #56e3e8;
+    line-height: 1.2;
+    text-align: left;
+    -moz-transform: matrix( 0.90129794505054,0,0,0.90129794505055,0,0);
+    -webkit-transform: matrix( 0.90129794505054,0,0,0.90129794505055,0,0);
+    transform: matrix( 0.90129794505054,0,0,0.90129794505055,0,0);
+
+}
+#blok-2-iconbar h4:first-of-type{
+	color: #363636;
+}
+#blok-2-iconbar > div{
+	height: 46px;
+}
+#blok-3 p:first-of-type{	
+  font-size: 15px;
+  font-family: "GillSans";
+  color: rgb(137, 137, 137);
+  line-height: 1.2;
+  text-align: left;
+  display: block;
+}
+#blok-3 p{
+	content: "John Smith";
+	color: #56e3e8;	
+   font-size: 15px;
+   font-family: "GillSans";
+   
+   line-height: 1.2;
+   text-align: left;
+}
+#client-respond{
+	padding: 0px 15px 0px 0px;
+	width: 90%;
+	float: left;
+}
+#blok-3 button{
+	padding: 5px 8px 5px 8px;
+	border-radius: 14px;
+	border: none;
+	background-color: #444444;
+	display: block;
+}
+#blok-3 button:first-of-type{
+	margin-bottom: 15px;
+	padding-top: 4px;
+
+}
+
+	
+	
+
+/*------------------------------------------------------------------------- Footer -----------------------------------------------------------------------------------------*/
+#footer{
+	width: 100%;	
+}
+
+
+/*---------------------------------------------- Info-blog -------------------------------------------------------*/
+#info-blog{
+	width: 100%;
+	background-color: #363636;	
+}
+#info-blog > div{
+	padding: 10px 30px 20px 20px;
+}
+#info-blog h3{	
+  font-size: 21px;
+  font-family: "BebasNeue";
+  color: #56e3e8;
+  line-height: 1.2;
+  text-align: left;  
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#info-blog h3::before{
+	text-transform: uppercase;
+	content: "LATEST FROM ";
+	color: #ebebeb;
+}
+#info-blog img{
+	display: inline-block;
+	margin-right: 15px;
+}
+#info-blog p{
+	font-size: 15px;
+    font-family: "GillSans";
+    color: rgb(235, 235, 235);
+    line-height: 1.2;
+    text-align: left;
+}
+#info-blog p:after{
+	content: " Read more ...";
+	color: #54d7dc;
+}
+
+
+
+/*---------------------------------------------- Copyrights -------------------------------------------------------*/
+#copyrights{
+	padding: 9px 20px 7px 20px;
+	width: 100%;
+	background-color: #252525;
+}
+#copyrights h6{
+	padding: 0px;
+	font-size: 12px;
+    font-family: "GillSans";
+    font-style: italic;
+    color: rgb(194, 194, 194);
+    line-height: 1.2;
+    text-align: left;
+}
+#copyrights div{
+	float: right;	
+
+}
+#copyrights div img{
+	margin-left: 3px;
+}
+
+@media only screen and (max-width: 500px){
+	#copyrights div { width: 146px; float: none; margin: auto; }
+	#copyrights h6 {text-align: center;padding-bottom: 8px;}
+	.mycol {width: 100%;}
+	.mycol:first-child{margin-bottom: 25px;}
+	#blok-2-iconbar > div{padding-bottom: 10px ;height: 56px;}
+	#blok-3 button:first-of-type{margin-bottom: 40px;}
+	.image-title{ width: 220px;}
+	.image-title-arrow{left: 190px;}
+}
+
+
+@media only screen and (max-width: 800px) {      
+    #blok-1{padding:15px 0px 10px 0px;}
+    #blok-2{padding: 15px 0px 10px 0px;}
+    #blok-3{padding: 15px 0px 10px 0px;}
+    #hidden-menu-icon{display: block;}
+}
+
+
+
+
