@@ -35,12 +35,14 @@ body{
     width: 100%;
 }
 @font-face{
-	font-family: "BebasNeue";
-	src: url(../Fonts/BebasNeueRegular.ttf);
+	font-family: BebasNeue;
+	src: url('../Fonts/BebasNeueRegular.eot?') ,
+	     url(../Fonts/BebasNeueRegular.ttf) format('truetype');
 }
 @font-face{
-	font-family: "GillSans";
-	src: url(../Fonts/Gillsansmt.ttf);
+	font-family: GillSans;
+	src: url('../Fonts/GillSansmt.eot?') ,
+	     url(../Fonts/GillSansmt.ttf) format('truetype');
 }
 @media only screen and (max-width: 800px) {    
     #menu-BG .menu{display: none;}	

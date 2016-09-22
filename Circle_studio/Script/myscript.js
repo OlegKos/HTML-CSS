@@ -1,6 +1,6 @@
 window.onscroll = function(){ 
     var header = document.getElementById("header")
-    if((window.scrollY>0)&&(screen.width<800)){
+    if((window.scrollY>0)&&(window.innerWidth<800)){
         header.style.backgroundColor="#ffffff";
         header.style.position="fixed";
         header.style.boxShadow="0 1px 10px rgba(0, 0, 0, 0.15)";
