@@ -230,7 +230,7 @@ body{
 	right: 2px;
 }
 #header h1{
-  display: initial;
+  display: inline;
   font-size: 39px;
   font-family: "BebasNeue";
   font-weight: 100;
@@ -700,6 +700,11 @@ body{
     #hidden-menu-icon{display: block;}
 }
 
+/* Code for IE only, other browser will ignore this */
+@media screen\0 {
+	#blok-1-header{width: 248px;}
+	#blok-2-header{width: 240px;}
+	#blok-3-header{width: 266px;}
 
-
+}
 
